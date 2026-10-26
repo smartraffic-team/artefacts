@@ -31,5 +31,16 @@ Para gerar o PDF localmente, você precisará de uma distribuição TeX instalad
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/smartraffic-team/artefacts.git
+   cd artefacts
+
+2. Limpe arquivos auxiliares antigos (opcional):
+   ```bash
+   latexmk -C
+   ```
+   
+3. Compile o PDF:
+   ```bash
+   latexmk -pdf artefatos.tex
+   ```
+O arquivo `artefatos.pdf` será gerado na raiz do projeto.
