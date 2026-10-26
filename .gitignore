@@ -1,0 +1,15 @@
+# Arquivos gerados pelo LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.pdf
+
+# Pastas de sistema
+.DS_Store
+Thumbs.db
