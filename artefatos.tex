@@ -270,33 +270,47 @@ Os artefatos de UX/UI geralmente incluem wireframes, mockups e protótipos que p
 
 \begin{figure}[H]
 \centering
+\includegraphics[width=\textwidth]{imgs/mobile/componentes-controles-e-estados.png}
+\caption{Componentes de Controle e Estados}
+\label{fig:website-controles}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{imgs/mobile/componentes-operacao-e-navegacao.png}
+\caption{Componentes de Operacao e Estados}
+\label{fig:website-operacao}
+\end{figure}
+
+\begin{figure}[H]
+\centering
 \begin{minipage}{0.45\textwidth}
     \centering
-    \fbox{\includegraphics[width=0.9\textwidth]{imgs/img_001.jpg}}
-    \caption{Wireframe da tela inicial}
-    \label{fig:wireframe}
+    \fbox{\includegraphics[width=0.9\textwidth]{imgs/mobile/02-home-mapa.png}}
+    \label{fig:mobile1}
 \end{minipage}
 \hfill
 \begin{minipage}{0.45\textwidth}
     \centering
-    \fbox{\includegraphics[width=0.9\textwidth]{imgs/img_001.jpg}}
-    \caption{Mockup de alta fidelidade}
-    \label{fig:mockup}
+    \fbox{\includegraphics[width=0.9\textwidth]{imgs/mobile/02a-detalhe-da-camera.png}}
+    \label{fig:mobile2}
 \end{minipage}
 \end{figure}
 
-\subsection{Exemplo de Código para Inserir Protótipos}
-
-Para inserir múltiplas telas do protótipo:
-
-\begin{verbatim}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{imgs/prototype-dashboard.png}
-\caption{Protótipo da Dashboard Principal}
-\label{fig:prototype-dashboard}
+\begin{minipage}{0.45\textwidth}
+    \centering
+    \fbox{\includegraphics[width=0.9\textwidth]{imgs/mobile/02b-ao-vivo-deteccao-ilustrativa.png}}
+    \label{fig:mobile3}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+    \centering
+    \fbox{\includegraphics[width=0.9\textwidth]{imgs/mobile/04b-novo-chamado-rascunho-cam-0012.png}}
+    \label{fig:mobile4}
+\end{minipage}
 \end{figure}
-\end{verbatim}
 
 \subsection{Guia de Estilos}
 
@@ -313,6 +327,21 @@ Para inserir múltiplas telas do protótipo:
 Primária & \colorbox[HTML]{181C2B}{\phantom{AAA}} & \#181C2B & Botões principais, destaques \\
 Secundária & \colorbox[HTML]{EBEAEB}{\phantom{AAA}} & \#EBEAEB & Títulos, elementos secundários \\
 Fundo & \colorbox[HTML]{FBC117}{\phantom{AAA}} & \#FBC117 & Background padrão \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Paleta de Cores da Equipe}
+\label{tab:cores}
+\begin{tabular}{|l|c|l|l|}
+\hline
+\textbf{Elemento} & \textbf{Cor} & \textbf{Código HEX} & \textbf{Uso} \\
+\hline
+Primária & \colorbox[HTML]{0093FB}{\phantom{AAA}} & \#0093FB & Cor Principal \\
+Secundária & \colorbox[HTML]{FE920A}{\phantom{AAA}} & \#FE920A & Cor Secundária \\
+Fundo & \colorbox[HTML]{181C2B}{\phantom{AAA}} & \#181C2B & Cor Terciária \\
 \hline
 \end{tabular}
 \end{table}
@@ -348,7 +377,7 @@ O mapa do site (sitemap) mostra a hierarquia e organização das páginas do web
         child {node {Fluxo}}
     }
     child {node {Projeto}
-        child {node {Fluxo}}
+        child {node {SmarTraffic}}
     };
     
 \end{tikzpicture}
@@ -356,38 +385,47 @@ O mapa do site (sitemap) mostra a hierarquia e organização das páginas do web
 \label{fig:sitemap-equipe}
 \end{figure}
 
-\subsection{Conteúdo das Páginas}
-
-\textbf{Páginas principais do site da equipe:}
-
-\begin{itemize}
-    \item \textbf{Inicio/Home:} Apresentação do projeto, o ponto de partida, como funciona, tecnologias aplicadas e equipe
-    \item \textbf{Projeto:} Informações adicionais relacionadas ao projeto como o desafio, proposta e resultado esperado, além do escopo atual
-    \item \textbf{Documentação:} Todo contexto técnico do projeto, como o fluxo atual, os componentes e leitura dos resultados
-\end{itemize}
-
 \subsection{Telas do Website da Equipe}
 
 Para documentar as páginas do website da equipe:
 
-\begin{verbatim}
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{imgs/img_001.jpg.png}
-\caption{Página inicial do website da equipe}
-\label{fig:website-home}
+\includegraphics[width=\textwidth]{imgs/site_web/equipe/carrosel.jpeg}
+\label{fig:website-carrosel}
 \end{figure}
-\end{verbatim}
 
-% (figura duplicada removida - ela referenciava imgs/website-equipe-home.png que não existe.
-%  Quando você tiver a imagem, descomente o bloco abaixo)
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{imgs/site_web/equipe/quemsomos.png}
+\label{fig:website-quemsomos}
+\end{figure}
 
-% \begin{figure}[H]
-% \centering
-% \includegraphics[width=\textwidth]{imgs/website-equipe-home.png}
-% \caption{Página inicial do website da equipe}
-% \label{fig:website-home-equipe}
-% \end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{imgs/site_web/equipe/equipe.png}
+\label{fig:website-equipe}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{imgs/site_web/equipe/arsenal.png}
+\label{fig:website-arsenal}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{imgs/site_web/equipe/projetoemdestaque.png}
+\label{fig:website-projetoemdestaque}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{imgs/site_web/equipe/footer.png}
+\caption{Página inicial do website da equipe}
+\label{fig:website-footer}
+\end{figure}
 
 \subsection{Mapa do Site do Projeto}
 
@@ -560,17 +598,37 @@ O diagrama de objetos mostra a estrutura estática do sistema utilizando dados f
 \label{fig:class-diagram}
 \end{figure}
 
-\subsection{Outros Diagramas UML Importantes}
+\subsubsection{Diagrama de Infraestrutura}
 
-\begin{itemize}
-    \item \textbf{Diagrama de Sequência:} Mostra a interação entre objetos ao longo do tempo
-    \item \textbf{Diagrama de Atividades:} Representa o fluxo de trabalho ou processo
-    \item \textbf{Diagrama de Componentes:} Mostra a organização física dos componentes
-    \item \textbf{Diagrama de Implantação:} Representa a arquitetura física do sistema
-    \item \textbf{Diagrama de Estados:} Mostra os estados de um objeto e suas transições
-\end{itemize}
+Para ilustrar como os componentes se conectam:
 
-\textbf{Ferramentas recomendadas:} Draw.io, Lucidchart, PlantUML, StarUML, Enterprise Architect
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{imgs/diagrama-de-rede-v1.png}
+\caption{Diagrama de Infraestrutura do Sistema -- V1}
+\label{fig:infra-v1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{imgs/diagrama-de-rede-v2.png}
+\caption{Diagrama de Infraestrutura do Sistema -- V2}
+\label{fig:infra-v2}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{imgs/diagrama-de-rede-v3.png}
+\caption{Diagrama de Infraestrutura do Sistema -- V3}
+\label{fig:infra-v3}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{imgs/diagrama-de-rede-v3-2.png}
+\caption{Diagrama de Infraestrutura do Sistema -- V3.2}
+\label{fig:infra-v4}
+\end{figure}
 
 % ===== DEVOPS =====
 \section{DevOps: Infraestrutura, Automação e Entrega Contínua}
@@ -710,34 +768,6 @@ Esta seção documenta como o sistema funciona em diferentes ambientes e platafo
 \end{tabular}
 \end{table}
 
-\subsubsection{Diagrama de Infraestrutura}
-
-Para ilustrar como os componentes se conectam:
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{imgs/diagrama-de-rede-v1.png}
-\caption{Diagrama de Infraestrutura do Sistema -- V1}
-\label{fig:infra-v1}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{imgs/diagrama-de-rede-v2.png}
-\caption{Diagrama de Infraestrutura do Sistema -- V2}
-\label{fig:infra-v2}
-\end{figure}
-
-\textbf{Exemplo de descrição:}
-
-\begin{itemize}
-    \item \textbf{Usuários Desktop/Mobile:} Acessam via navegador através de HTTPS
-    \item \textbf{Desktop/Mobile:} Conectam-se via API REST com autenticação os dispositivos que o sistema possui, com variados tipos de acesso
-    \item \textbf{Banco de Dados:} PostgreSQL em cluster para alta disponibilidade
-    \item \textbf{Storage:} Amazon S3 para arquivos e imagens
-    \item \textbf{Cache:} Redis para otimização de performance
-    \item \textbf{Fila de Mensagens:} RabbitMQ para processamento assíncrono
-\end{itemize}
 
 \subsection{Arquitetura de Deploy}
 
