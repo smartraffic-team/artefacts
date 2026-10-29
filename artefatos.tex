@@ -147,6 +147,7 @@
 
 \begin{itemize}
     \item \textbf{CANVAS:} Modelo de negócio e estratégia
+    \item \textbf{LOGBOOK:} Diário de Bordo do projeto
     \item \textbf{SWOT:} Análise estratégica de forças, fraquezas, oportunidades e ameaças
     \item \textbf{UX/UI:} Design de interface e experiência do usuário
     \item \textbf{Website:} Estrutura e especificações técnicas web
@@ -168,6 +169,7 @@
 \label{tab:canvas}
 \small
 \renewcommand{\arraystretch}{1.3}
+\resizebox{\textwidth}{!}{% <-- Adicionado resizebox para garantir que não estoure a margem
 \begin{tabular}{|>{\raggedright\arraybackslash}p{2.7cm}|>{\raggedright\arraybackslash}p{2.7cm}|>{\raggedright\arraybackslash}p{2.7cm}|>{\raggedright\arraybackslash}p{2.7cm}|>{\raggedright\arraybackslash}p{2.7cm}|}
 \hline
 \textbf{Parcerias Principais} & \textbf{Atividades Chave} & \textbf{Proposta de Valor} & \textbf{Relacionamento} & \textbf{Segmentos de Clientes} \\
@@ -191,6 +193,47 @@ Câmeras, Visão Computacional, Arduino
 Implantação por cruzamento (hardware e instalação), Recorrentes (suporte e manutenção, atualização dos modelos de IA), Margem (venda do kit e assinatura mensal)
 &
 \multicolumn{2}{p{5.6cm}|}{Venda direta para prefeituras (licitação ou contrato direto), Instalação piloto em um cruzamento (parceria com a prefeitura local)} \\
+\hline
+\end{tabular}
+}
+\end{table}
+
+% ===== CRONOGRAMA DE ATIVIDADES (NOVA TABELA) =====
+\section{Cronograma de Atividades}
+
+Abaixo está o cronograma detalhado das atividades planejadas e executadas pela equipe para o desenvolvimento do projeto.
+
+\begin{table}[H]
+\centering
+\caption{Cronograma e Divisão de Atividades}
+\label{tab:cronograma}
+\small
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|p{2.5cm}|p{1.8cm}|p{1.8cm}|p{2.5cm}|>{\raggedright\arraybackslash}p{5cm}|}
+\hline
+\textbf{Nome da Atividade} & \textbf{Data de Início} & \textbf{Data de Término} & \textbf{Responsável} & \textbf{Descrição da Atividade} \\
+\hline
+Planejamento Inicial & 14/08/2026 & 14/08/2026 & Todos da equipe & Divisao das tarefas e objetivos do semestre. \\
+\hline
+Prototipação UX/UI & 16/08/2026 & 08/09/2026 & João Paulo & Criação de wireframes, mockups e design system do aplicativo. \\
+\hline
+Modelagem UML & 16/08/2026 & 25/08/2026 & Paulo Seiji & Criação dos diagramas de caso de uso, classes e objetos, banco de dados e redes. \\
+\hline
+Desenvolvimento Backend & 21/08/2026 & 29/10/2026 & Cristhian Hatzman e Bruno de Lucca & Implementação da API, banco de dados e integração com YOLO. \\
+\hline
+Desenvolvimento Frontend & 04/09/2026 & 19/10/2026 & João Paulo e Marcelo Augusto & Desenvolvimento das interfaces web. \\
+\hline
+Pitch & 20/09/2026 & 22/10/2026 & Marcelo Augusto & Elaboracao do vídeo de apresentacao do projeto em formato de pitch. \\
+\hline
+IoT & 04/09/2026 & 30/10/2026 & Paulo Seiji e Marcelo Augusto & Desenvolvimento da aplicacao do projeto com Arduino UNO e utilizando linguagem de programacao C++. \\
+\hline
+Artigo & 15/09/2026 & 30/10/2026 & Bruno de Lucca e Cristhian Hatzman & Escrita e aprimoramento do artigo científico do projeto. \\
+\hline
+Artefatos & 04/09/2026 & 30/10/2026 & Paulo Seiji & Criacao de todas a documentacao do projeto. \\
+\hline
+Maquete & 15/08/2026 & 03/11/2026 & Bruno de Lucca & Desenvolvimento e aprimoramento da maquete utilizada para demonstracao e prova de conceito do projeto. \\
+\hline
+Mobile & 01/09/2026 & 30/10/2026 & Bruno de Lucca & Desenvolvimento das interfaces mobile. \\
 \hline
 \end{tabular}
 \end{table}
@@ -278,7 +321,7 @@ Os artefatos de UX/UI geralmente incluem wireframes, mockups e protótipos que p
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{imgs/mobile/componentes-operacao-e-navegacao.png}
-\caption{Componentes de Operacao e Estados}
+\caption{Componentes de Operação e Estados}
 \label{fig:website-operacao}
 \end{figure}
 
@@ -287,12 +330,14 @@ Os artefatos de UX/UI geralmente incluem wireframes, mockups e protótipos que p
 \begin{minipage}{0.45\textwidth}
     \centering
     \fbox{\includegraphics[width=0.9\textwidth]{imgs/mobile/02-home-mapa.png}}
+    \caption{Tela Inicial - Mapa}
     \label{fig:mobile1}
 \end{minipage}
 \hfill
 \begin{minipage}{0.45\textwidth}
     \centering
     \fbox{\includegraphics[width=0.9\textwidth]{imgs/mobile/02a-detalhe-da-camera.png}}
+    \caption{Detalhe da Câmera}
     \label{fig:mobile2}
 \end{minipage}
 \end{figure}
@@ -302,12 +347,14 @@ Os artefatos de UX/UI geralmente incluem wireframes, mockups e protótipos que p
 \begin{minipage}{0.45\textwidth}
     \centering
     \fbox{\includegraphics[width=0.9\textwidth]{imgs/mobile/02b-ao-vivo-deteccao-ilustrativa.png}}
+    \caption{Detecção ao Vivo (Ilustrativa)}
     \label{fig:mobile3}
 \end{minipage}
 \hfill
 \begin{minipage}{0.45\textwidth}
     \centering
     \fbox{\includegraphics[width=0.9\textwidth]{imgs/mobile/04b-novo-chamado-rascunho-cam-0012.png}}
+    \caption{Novo Chamado - Rascunho}
     \label{fig:mobile4}
 \end{minipage}
 \end{figure}
@@ -319,7 +366,7 @@ Os artefatos de UX/UI geralmente incluem wireframes, mockups e protótipos que p
 \begin{table}[H]
 \centering
 \caption{Paleta de Cores do Projeto}
-\label{tab:cores}
+\label{tab:cores-projeto}
 \begin{tabular}{|l|c|l|l|}
 \hline
 \textbf{Elemento} & \textbf{Cor} & \textbf{Código HEX} & \textbf{Uso} \\
@@ -334,7 +381,7 @@ Fundo & \colorbox[HTML]{FBC117}{\phantom{AAA}} & \#FBC117 & Background padrão \
 \begin{table}[H]
 \centering
 \caption{Paleta de Cores da Equipe}
-\label{tab:cores}
+\label{tab:cores-equipe}
 \begin{tabular}{|l|c|l|l|}
 \hline
 \textbf{Elemento} & \textbf{Cor} & \textbf{Código HEX} & \textbf{Uso} \\
@@ -389,41 +436,45 @@ O mapa do site (sitemap) mostra a hierarquia e organização das páginas do web
 
 Para documentar as páginas do website da equipe:
 
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{imgs/site_web/equipe/carrosel.jpeg}
+\caption{Carrossel de imagens do site}
 \label{fig:website-carrosel}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{imgs/site_web/equipe/quemsomos.png}
+\caption{Seção Quem Somos}
 \label{fig:website-quemsomos}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{imgs/site_web/equipe/equipe.png}
+\caption{Apresentação da equipe}
 \label{fig:website-equipe}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{imgs/site_web/equipe/arsenal.png}
+\caption{Arsenal de Tecnologias}
 \label{fig:website-arsenal}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{imgs/site_web/equipe/projetoemdestaque.png}
+\caption{Projeto em Destaque}
 \label{fig:website-projetoemdestaque}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{imgs/site_web/equipe/footer.png}
-\caption{Página inicial do website da equipe}
+\caption{Página inicial do website da equipe - Footer}
 \label{fig:website-footer}
 \end{figure}
 
@@ -595,7 +646,7 @@ O diagrama de objetos mostra a estrutura estática do sistema utilizando dados f
 \centering
 \includegraphics[width=\textwidth]{imgs/diagrama-de-objeto.jpeg}
 \caption{Diagrama de Objetos do Sistema}
-\label{fig:class-diagram}
+\label{fig:object-diagram}
 \end{figure}
 
 \subsubsection{Diagrama de Infraestrutura}
@@ -630,189 +681,6 @@ Para ilustrar como os componentes se conectam:
 \label{fig:infra-v4}
 \end{figure}
 
-% ===== DEVOPS =====
-\section{DevOps: Infraestrutura, Automação e Entrega Contínua}
-
-DevOps \cite{wang2023} é uma cultura e conjunto de práticas que integra desenvolvimento de software (Dev) e operações de TI (Ops), focando em automação, colaboração e entrega contínua.
-
-\subsection{Pipeline CI/CD}
-
-O pipeline de integração e entrega contínua é fundamental para automação:
-
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}[
-    node distance=1.5cm,
-    every node/.style={rectangle, draw, rounded corners, 
-                       fill=secondarycolor!20, 
-                       text width=2cm, 
-                       align=center,
-                       font=\small,
-                       minimum height=1cm}
-]
-\node (code) {Code};
-\node (build) [right of=code, xshift=1cm] {Build};
-\node (test) [right of=build, xshift=1cm] {Test};
-\node (deploy) [right of=test, xshift=1cm] {Deploy};
-\node (monitor) [right of=deploy, xshift=1cm] {Monitor};
-
-\draw[->, thick] (code) -- (build);
-\draw[->, thick] (build) -- (test);
-\draw[->, thick] (test) -- (deploy);
-\draw[->, thick] (deploy) -- (monitor);
-\draw[->, thick, dashed] (monitor) to[bend right=45] (code);
-\end{tikzpicture}
-\caption{Pipeline CI/CD}
-\label{fig:cicd}
-\end{figure}
-
-\subsection{Exemplo de Configuração CI/CD}
-
-Exemplo de arquivo \texttt{.gitlab-ci.yml} ou GitHub Actions:
-
-\begin{verbatim}
-stages:
-  - build
-  - test
-  - deploy
-
-build:
-  stage: build
-  script:
-    - npm install
-    - npm run build
-
-test:
-  stage: test
-  script:
-    - npm run test
-    - npm run lint
-
-deploy:
-  stage: deploy
-  script:
-    - npm run deploy
-  only:
-    - main
-\end{verbatim}
-
-\subsection{Infraestrutura como Código}
-
-\begin{table}[H]
-\centering
-\caption{Ferramentas DevOps Utilizadas}
-\label{tab:devops-tools}
-\begin{tabular}{|l|l|p{6cm}|}
-\hline
-\textbf{Categoria} & \textbf{Ferramenta} & \textbf{Finalidade} \\
-\hline
-Controle de Versão & Git + GitHub & Versionamento de código \\
-CI/CD & GitHub Actions & Automação de build e deploy \\
-Containerização & Docker & Empacotamento de aplicações \\
-Orquestração & Kubernetes & Gerenciamento de containers \\
-Monitoramento & Prometheus + Grafana & Métricas e dashboards \\
-Logs & ELK Stack & Centralização de logs \\
-IaC & Terraform & Provisionamento de infraestrutura \\
-\hline
-\end{tabular}
-\end{table}
-
-\subsection{Infraestrutura do Sistema}
-
-Esta seção documenta como o sistema funciona em diferentes ambientes e plataformas.
-
-\subsubsection{Arquitetura de Rede}
-
-\begin{table}[H]
-\centering
-\caption{Componentes de Infraestrutura}
-\label{tab:infrastructure}
-\begin{tabular}{|l|p{10cm}|}
-\hline
-\textbf{Componente} & \textbf{Descrição} \\
-\hline
-\textbf{Rede Local (LAN)} & 
-\begin{itemize}[leftmargin=*, nosep]
-    \item Servidor local para desenvolvimento e testes
-    \item Rede interna com IP fixo (ex: 192.168.1.x)
-    \item Acesso via VPN para equipe remota
-    \item Backup local diário em servidor dedicado
-\end{itemize} \\
-\hline
-\textbf{Cloud (Nuvem)} & 
-\begin{itemize}[leftmargin=*, nosep]
-    \item Hospedagem em AWS/Azure/Google Cloud
-    \item Auto-scaling para gerenciar demanda
-    \item CDN para distribuição de conteúdo estático
-    \item Backup automático em múltiplas regiões
-    \item Ambiente de produção e homologação separados
-\end{itemize} \\
-\hline
-\textbf{Dispositivos Móveis} & 
-\begin{itemize}[leftmargin=*, nosep]
-    \item API REST para comunicação mobile
-    \item Suporte para iOS e Android
-    \item Sincronização offline com cache local
-    \item Push notifications para atualizações
-    \item Responsive design para tablets
-\end{itemize} \\
-\hline
-\textbf{Segurança} & 
-\begin{itemize}[leftmargin=*, nosep]
-    \item Firewall e SSL/TLS para comunicação segura
-    \item Autenticação JWT e OAuth 2.0
-    \item Criptografia de dados sensíveis
-    \item Monitoramento de acessos e logs de auditoria
-\end{itemize} \\
-\hline
-\end{tabular}
-\end{table}
-
-
-\subsection{Arquitetura de Deploy}
-
-Para documentar a arquitetura de deployment:
-
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}[
-    node distance=2cm,
-    component/.style={rectangle, draw, rounded corners, 
-                      fill=secondarycolor!20, 
-                      text width=2.5cm, 
-                      align=center,
-                      minimum height=1.2cm}
-]
-\node[component] (lb) {Load Balancer};
-\node[component, below left of=lb] (app1) {App Server 1};
-\node[component, below right of=lb] (app2) {App Server 2};
-\node[component, below of=app1, xshift=1.5cm] (db) {Database};
-\node[component, below of=db] (cache) {Redis Cache};
-
-\draw[<->, thick] (lb) -- (app1);
-\draw[<->, thick] (lb) -- (app2);
-\draw[<->, thick] (app1) -- (db);
-\draw[<->, thick] (app2) -- (db);
-\draw[<->, thick] (app1) -- (cache);
-\draw[<->, thick] (app2) -- (cache);
-\end{tikzpicture}
-\caption{Arquitetura de Deployment}
-\label{fig:deployment}
-\end{figure}
-
-\subsection{Métricas e SLA}
-
-Definir métricas importantes para monitoramento:
-
-\begin{itemize}
-    \item \textbf{Disponibilidade:} 99.9\% (uptime)
-    \item \textbf{Tempo de Resposta:} $<$ 200ms (média)
-    \item \textbf{Taxa de Erro:} $<$ 0.1\%
-    \item \textbf{Throughput:} 1000 requisições/segundo
-    \item \textbf{Deploy Frequency:} Diário
-    \item \textbf{Lead Time:} $<$ 1 hora
-    \item \textbf{MTTR:} $<$ 30 minutos (Mean Time To Recovery)
-\end{itemize}
 
 \newpage
 \section*{Conclusão}
@@ -822,10 +690,14 @@ Este documento apresenta os principais artefatos necessários para a documentaç
 Os artefatos documentados incluem:
 \begin{itemize}
     \item \textbf{CANVAS:} Modelo de negócio e estratégia
+    \item \textbf{LOGBOOK:} Diário de Bordo do projeto com todas as atividades
     \item \textbf{SWOT:} Análise estratégica de forças, fraquezas, oportunidades e ameaças
     \item \textbf{UX/UI:} Design de interface e experiência do usuário
     \item \textbf{Website:} Estrutura e especificações técnicas web
     \item \textbf{Diagramas UML:} Modelagem visual do sistema
-    \item \textbf{DevOps:} Infraestrutura, automação
+\end{itemize}
+
+\bibliographystyle{abntex2-alf}
+\bibliography{referencias}
 
 \end{document}
